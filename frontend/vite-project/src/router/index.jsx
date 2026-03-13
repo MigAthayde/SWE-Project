@@ -6,6 +6,7 @@ import PublishRidePage from '../pages/PublishRidePage';
 import MyTripsPage from '../pages/MyTripsPage';
 import ProfilePage from '../pages/ProfilePage';
 import NotFoundPage from '../pages/NotFoundPage';
+import LoginPage from '../pages/LoginPage';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: 'login', element: <LoginPage /> },
       { path: 'search', element: <SearchPage /> },
       { path: 'publish', element: <PublishRidePage /> },
       { path: 'my-trips', element: <MyTripsPage /> },

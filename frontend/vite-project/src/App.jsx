@@ -1,15 +1,8 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import './App.css';
-import LoginPage from './Pages/LoginPage';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 
-function App(){
-  return (
-    <Router>
-      <Routes>
-        <Route path='/login' element={<LoginPage />} />
-      </Routes>
-    </Router>
-  )
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
